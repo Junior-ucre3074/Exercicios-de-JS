@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Calculo de IMC</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Calcule seu IMC</h1>
+    <ul>
+      <li>IMC  menor que 18.5 Kg/m2: abaixo do peso.</li>
+      <li>IMC entre 18,5 e 24,9 Kg/m2: peso normal.</li>
+      <li>IMC entre 25,0 e 29,9 Kg/m2: sobrepeso.</li>
+      <li>IMC entre 30,0 e 34,9 Kg/m2: obesidade grau I.</li>
+      <li>IMC entre 35,0 e 39,9 Kg/m2: obesidade grau II.</li>
+      <li>IMC maior do que 40,0 Kg/m2: obesidade grau III.</li>
+    </ul>
+    <form action="/" id="formulario" method="post">
+      <label for="peso">Peso</label>
+      <input type="text" id="peso" name="peso">
+      <label for="peso">Altura</label>
+      <input type="text" id="altura" name="altura">
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado"></div>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
